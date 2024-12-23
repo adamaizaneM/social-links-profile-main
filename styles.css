@@ -1,0 +1,107 @@
+/* General Reset */
+body, h2, h5, h6, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Card Styling */
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 90%; /* Make the card responsive */
+    max-width: 400px; /* Limit the maximum width */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Profile Image Styling */
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular */
+    border: 2px solid hsl(0, 0%, 100%); /* White border */
+    margin: 0 auto 20px; /* Center image and add bottom spacing */
+    display: block;
+}
+
+/* Typography */
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 700; /* Bold */
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+h6 {
+    color: hsl(0, 0%, 100%);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 14px;
+    height: 40px;
+    width: 100%; /* Full width of the card */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 30%); /* Lighter grey on hover */
+}
+
+/* Accessibility: Focus State */
+button:focus {
+    outline: 2px solid hsl(75, 94%, 57%); /* Green focus ring */
+    outline-offset: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .card {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    button {
+        width: 100%; /* Buttons remain responsive */
+    }
+}
